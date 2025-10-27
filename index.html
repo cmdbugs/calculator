@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        .calculator-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calculation-input-container {
+            border: 1px solid black;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20vh;
+            background-color: rgb(250, 247, 247);
+        }
+
+        .display {
+            padding: 40px;
+            border: 1px solid black;
+            /* border-top-right-radius: 10px;
+            border-top-left-radius: 10px; */
+            margin-top: 20px;
+            background-color: white;
+        }
+
+        button {
+            font-size: 1.2rem;
+            padding: 10px 5px;
+            border-style: none;
+            border: 2px solid silver;
+            border-radius: 5px;
+        }
+
+
+         button:hover {
+            background-color: rgb(49, 152, 150);
+            color: white;
+         }
+
+        .equals:hover {
+            background-color: rgb(8, 146, 43);
+            color: white;
+         }
+
+        .buttons-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            margin-top: 20px;
+
+            grid-template-areas: 
+            "clear divide multiply delete"
+            "seven eight nine minus"
+            "four five six plus"
+            "one two three equals"
+            "remainder zero dot equals";
+        }
+
+
+        .clear {
+            grid-area: clear;
+            color: blue;
+        }
+
+        .divde {
+            grid-area: divide;
+                        color: blue;
+
+        }
+
+        .multiply{
+            grid-area: multiply;
+                        color: blue;
+
+        }
+
+        .delete{
+            grid-area: delete;
+                        color: blue;
+
+        }
+
+        .seven{
+            grid-area: seven;
+        }
+
+        .eight{
+            grid-area: eight;
+        }
+
+        .nine{
+            grid-area: nine;
+        }
+
+        .minus{
+            grid-area: minus;
+            color: blue;
+
+        }
+
+        .four{
+            grid-area: four;
+        }
+        .five{
+            grid-area: five;
+        }
+
+        .six{
+            grid-area: six;
+        }
+        .plus{
+            grid-area: plus;
+            color: blue
+
+        }
+        .one{
+            grid-area: one;
+        }
+
+        .two{
+            grid-area: two;
+        }
+        .three{
+            grid-area: three;
+        }
+
+        .equals{
+            grid-area: equals;
+            background-color: rgb(78, 78, 227);
+            color: white;
+        }
+
+        .remainder{
+            grid-area: remainder;
+        }
+
+        .zero{
+            grid-area: zero;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculation-input-container">
+            <div class="display"></div>
+            <div class="buttons-container">
+                <button class="clear">Clear</button>
+                <button class="divde">÷</button>
+                <button class="multiply">*</button>
+                <button class="delete">Delete</button>
+                <button class="seven">7</button>
+                <button class="eight">8</button>
+                <button class="nine">9</button>
+                <button class="minus">-</button>
+                <button class="four">4</button>
+                <button class="five">5</button>
+                <button class="six">6</button>
+                <button class="plus">+</button>
+                <button class="one">1</button>
+                <button class="two">2</button>
+                <button class="three">3</button>
+                <button class="equals">=</button>
+                <button class="remainder">%</button>
+                <button class="zero">0</button>
+                <button class="dot">.</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+    </script>
+
+
+</body>
+</html>
